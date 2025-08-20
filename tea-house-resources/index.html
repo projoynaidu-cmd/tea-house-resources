@@ -274,24 +274,122 @@
 
       <!-- Meet Our Team Section -->
       <section
-        class="mt-8 flex flex-col md:flex-row items-center justify-between gap-8 mb-16 h-full bg-gradient-to-r from-[#ff8938] to-[#ff0000] "
+        class="mt-0 md:mt-12 w-full rounded-xl h-[600px] p-10 flex flex-col md:flex-row items-center justify-between gap-8 mb-16 bg-gradient-to-r from-[#ff8938] to-[#ff0000]"
       >
-        <div
-          class="text-center md:text-left max-w-lg w-full border-2 border-red-500"
-        >
-          <h2 class="text-3xl font-semibold mb-4 text-center">Meet Our Super Clients</h2>
-          <p class="text-gray-600 text-center md:text-base text-xs">
+        <!-- Left content: Text -->
+        <!-- Left content: Text -->
+        <div class="text-center md:text-left max-w-lg w-full">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4 text-white">
+            Meet Our Super <br class="hidden md:block" />
+            Clients
+          </h2>
+          <p
+            class="text-white text-sm md:text-base opacity-90 leading-relaxed mb-6"
+          >
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, by injected
             humour, or randomised words which don't look even slightly
             believable.
           </p>
-          <button class="mt-6  font-semibold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">Explore Our Team</button>
+          <button
+            class="explore-btn font-semibold py-3 px-8 rounded-lg transition-all duration-500 transform hover:scale-105"
+          >
+            Explore Our Team <i class="fas fa-arrow-right ml-2"></i>
+          </button>
         </div>
-        <div
-          class="text-center md:text-left max-w-lg w-full border-2 border-red-500"
-        ></div>
+        <!-- Right content: Text -->
+ 
+        <div class="relative md:w-1/2 w-full max-w-lg h-[380px] md:h-[420px]">
+          <!-- Card 1 (front) -->
+          <article
+            class="absolute z-30 left-2 md:-left-10 top-20 md:top-24 w-[280px] md:w-[320px] bg-white rounded-2xl shadow-xl p-6"
+          >
+            <div
+              class="absolute -top-6 -left-4 rounded-full ring-4 ring-white shadow-md"
+            >
+              <img
+                class="w-14 h-14 rounded-full object-cover"
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80"
+                alt="Client: Ilham Yuda"
+              />
+            </div>
+            <div class="flex text-yellow-400 mb-2">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+              We are providing the best and suitable home insurance services for
+              the people who are interested to treatment
+            </p>
+            <h4 class="font-bold mb-1 text-gray-800">Ilham Yuda</h4>
+            <small class="text-orange-500 font-medium">Founder & CEO</small>
+          </article>
+
+          <!-- Card 2 (behind, faded) -->
+          <article
+            class="absolute z-10 right-0 md:right-8 top-6 md:top-10 w-[260px] md:w-[300px] bg-white rounded-2xl shadow-lg p-6 opacity-40 pointer-events-none"
+            aria-hidden="true"
+          >
+            <div
+              class="absolute -top-6 -left-4 rounded-full ring-4 ring-white shadow-md"
+            >
+              <img
+                class="w-14 h-14 rounded-full object-cover"
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80"
+                alt=""
+              />
+            </div>
+            <div class="flex text-yellow-400 mb-2">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+              The service exceeded my expectations. I got the best insurance
+              plan that perfectly fits my needs and budget. Highly recommended!
+            </p>
+            <h4 class="font-bold mb-1 text-gray-800">Sarah Johnson</h4>
+            <small class="text-orange-500 font-medium"
+              >Marketing Director</small
+            >
+          </article>
+
+          <!-- Card 3 (behind, faded) -->
+          <article
+            class="absolute z-10 left-6 md:left-10 bottom-0 md:bottom-[-24px] w-[250px] md:w-[290px] bg-white rounded-2xl shadow-lg p-6 opacity-40 pointer-events-none"
+            aria-hidden="true"
+          >
+            <div
+              class="absolute -top-6 -left-4 rounded-full ring-4 ring-white shadow-md"
+            >
+              <img
+                class="w-14 h-14 rounded-full object-cover"
+                src="https://images.unsplash.com/photo-1552058544-f2b08422138a?auto=format&fit=crop&w=100&q=80"
+                alt=""
+              />
+            </div>
+            <div class="flex text-yellow-400 mb-2">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+              Professional team with quick response time. They helped me find
+              the perfect solution for my family's insurance needs.
+            </p>
+            <h4 class="font-bold mb-1 text-gray-800">Michael Chen</h4>
+            <small class="text-orange-500 font-medium">Business Analyst</small>
+          </article>
+        </div>
       </section>
+
+      <!-- Footer section -->
+      <footer class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto text-center">
+          <p>&copy; 2023 TeaHouse Insurance. All rights reserved.</p>
+        </div>
+      </footer>
     </main>
     <script src="script.js"></script>
   </body>
