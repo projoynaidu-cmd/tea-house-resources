@@ -1,98 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meet Our Super Clients</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Backgrounds</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              "custom-gradient":
+                "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+              "hero-pattern":
+                'url(\'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23f8fafc"/><path d="M0 0L100 100" stroke="%23e2e8f0" stroke-width="2"/><path d="M100 0L0 100" stroke="%23e2e8f0" stroke-width="2"/></svg>\')',
+            },
+          },
+        },
+      };
+    </script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f8fafc;
-        }
-        
-        .client-card {
-            transition: all 0.3s ease;
-        }
-        
-        .client-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
+      .custom-bg {
+        background-image: linear-gradient(to right, #ec4899, #8b5cf6);
+      }
+      .parallax-bg {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
     </style>
-</head>
-<body class="bg-gray-50 min-h-screen flex items-center justify-center p-4">
-    <div class="container max-w-6xl mx-auto py-12">
-        <!-- Section: Meet Our Super Clients -->
-        <section class="flex flex-col lg:flex-row gap-12">
-            <!-- Left Content -->
-            <div class="w-full lg:w-2/5">
-                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Meet Our Super Clients</h1>
-                <p class="text-gray-600 text-lg mb-8">
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                </p>
-                <button class="flex items-center text-white bg-[#4F46BA] hover:bg-[#4338CA] px-6 py-3 rounded-lg transition duration-300">
-                    Show All
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                </button>
+  </head>
+  <body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-12 max-w-6xl">
+      <h1 class="text-4xl font-bold text-center text-gray-800 mb-2">
+        Background Gradients & Images
+      </h1>
+      <p class="text-lg text-center text-gray-600 mb-12">
+        How to use Tailwind CSS for beautiful backgrounds
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <!-- Gradient Examples -->
+        <div class="bg-white rounded-xl shadow-lg p-6">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">
+            Gradient Backgrounds
+          </h2>
+
+          <div class="space-y-6">
+            <!-- Simple Gradient -->
+            <div>
+              <h3 class="text-lg font-semibold text-gray-700 mb-2">
+                Simple Gradient
+              </h3>
+              <div
+                class="h-24 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center text-white font-medium"
+              >
+                bg-gradient-to-r from-cyan-500 to-blue-500
+              </div>
             </div>
-            
-            <!-- Right Content - Cards -->
-            <div class="w-full lg:w-3/5 grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Card 1 -->
-                <div class="client-card bg-white rounded-xl p-6 shadow-md">
-                    <p class="text-gray-600 mb-4">
-                        We are providing the best and suitable home insurance services for the people who are interested to treatment.
-                    </p>
-                    <p class="text-gray-600">
-                        We are providing the best and suitable home insurance services for the people who are interested to treatment.
-                    </p>
-                    <div class="flex items-center mt-6">
-                        <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center mr-4">
-                            <span class="text-purple-600 font-bold">IY</span>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-gray-800">Ilham Yuda</h3>
-                            <p class="text-gray-600 text-sm">Businessman</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Card 2 -->
-                <div class="client-card bg-white rounded-xl p-6 shadow-md">
-                    <h2 class="text-xl font-bold text-gray-800 mb-4">Introduction to Treatment</h2>
-                    <div class="h-px bg-gray-200 my-4"></div>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
-                            <span class="text-blue-600 font-bold">IY</span>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-gray-800">Ilham Yuda</h3>
-                            <p class="text-gray-600 text-sm">Designer</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Card 3 -->
-                <div class="client-card bg-white rounded-xl p-6 shadow-md md:col-span-2 lg:col-span-1">
-                    <div class="flex items-center text-gray-500 mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                        </svg>
-                        <span>11/10 - 25/9</span>
-                    </div>
-                    <div class="h-px bg-gray-200 my-4"></div>
-                    <p class="text-gray-600">
-                        We are providing the best and suitable home insurance services for the people who are interested to treatment.
-                    </p>
-                </div>
+
+            <!-- Multi-color Gradient -->
+            <div>
+              <h3 class="text-lg font-semibold text-gray-700 mb-2">
+                Multi-color Gradient
+              </h3>
+              <div
+                class="h-24 rounded-lg bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 flex items-center justify-center text-white font-medium"
+              >
+                from-green-400 via-blue-500 to-purple-600
+              </div>
             </div>
-        </section>
+
+            <!-- Custom Angle Gradient -->
+            <div>
+              <h3 class="text-lg font-semibold text-gray-700 mb-2">
+                Custom Angle Gradient
+              </h3>
+              <div
+                class="h-24 rounded-lg bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500 flex items-center justify-center text-white font-medium"
+              >
+                bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image Background Examples -->
+        <div class="bg-white rounded-xl shadow-lg p-6">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">
+            Image Backgrounds
+          </h2>
+
+          <div class="space-y-6">
+            <!-- Background Image with Overlay -->
+            <div>
+              <h3 class="text-lg font-semibold text-gray-700 mb-2">
+                Image with Text Overlay
+              </h3>
+              <div
+                class="h-24 rounded-lg bg-[url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80')] bg-cover bg-center flex items-center justify-center"
+              >
+                <div
+                  class="bg-black bg-opacity-40 text-white font-medium px-4 py-2 rounded-lg"
+                >
+                  bg-[url('image.jpg')]
+                </div>
+              </div>
+            </div>
+
+            <!-- Background Pattern -->
+            <div>
+              <h3 class="text-lg font-semibold text-gray-700 mb-2">
+                Background Pattern
+              </h3>
+              <div
+                class="h-24 rounded-lg bg-hero-pattern flex items-center justify-center text-gray-700 font-medium"
+              >
+                Custom pattern via tailwind.config.js
+              </div>
+            </div>
+
+            <!-- Gradient + Image -->
+            <div>
+              <h3 class="text-lg font-semibold text-gray-700 mb-2">
+                Gradient + Image
+              </h3>
+              <div
+                class="h-24 rounded-lg bg-[url('https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80')] bg-cover bg-center flex items-center justify-center"
+              >
+                <div
+                  class="bg-gradient-to-r from-blue-800/70 to-purple-800/70 w-full h-full rounded-lg flex items-center justify-center text-white font-medium"
+                >
+                  Combined effect
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Practical Examples -->
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">
+        Practical Examples
+      </h2>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+        <!-- Hero Section with Gradient -->
+        <div class="rounded-xl overflow-hidden shadow-lg">
+          <div class="custom-bg text-white p-8">
+            <h3 class="text-2xl font-bold mb-4">Hero Section</h3>
+            <p class="mb-6">
+              This uses a custom CSS gradient class applied to a div.
+            </p>
+            <button
+              class="bg-white text-purple-600 font-semibold px-6 py-2 rounded-lg"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+
+        <!-- Card with Image Background -->
+        <div class="rounded-xl overflow-hidden shadow-lg">
+          <div
+            class="h-64 bg-[url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80')] bg-cover bg-center flex items-end"
+          >
+            <div
+              class="bg-gradient-to-t from-black via-black/70 to-transparent w-full p-6 text-white"
+            >
+              <h3 class="text-2xl font-bold">Mountain View</h3>
+              <p>Beautiful landscape photography</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Code Examples -->
+      <div class="bg-gray-800 rounded-xl p-6 text-white">
+        <h2 class="text-2xl font-bold mb-4">Code Examples</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <h3 class="text-lg font-semibold mb-2">Gradient Backgrounds</h3>
+            <pre class="bg-gray-900 p-4 rounded-lg overflow-x-auto">
+<code>&lt;!-- Simple two-color gradient --&gt;
+&lt;div class="bg-gradient-to-r from-cyan-500 to-blue-500"&gt;
+  Content here
+&lt;/div&gt;
+
+&lt;!-- Multi-color gradient --&gt;
+&lt;div class="bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"&gt;
+  Content here
+&lt;/div&gt;
+
+&lt;-- Direction modifiers --&gt;
+to-r (right), to-l (left), to-t (top),
+to-b (bottom), to-tr (top right), etc.</code></pre>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-2">Image Backgrounds</h3>
+            <pre class="bg-gray-900 p-4 rounded-lg overflow-x-auto">
+<code>&lt;!-- Using arbitrary value --&gt;
+&lt;div class="bg-[url('/path/to/image.jpg')]"&gt;
+  Content here
+&lt;/div&gt;
+
+&lt;!-- Background size --&gt;
+bg-cover, bg-contain, bg-auto
+
+&lt;!-- Background position --&gt;
+bg-center, bg-top, bg-left, etc.
+
+&lt;!-- Background repeat --&gt;
+bg-repeat, bg-no-repeat, bg-repeat-x</code></pre>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

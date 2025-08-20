@@ -1,197 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tea house</title>
+    <!-- tailwind cdn -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>tea house</title>
-        <!-- tailwind cdn -->
-        <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
-        <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonts Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-        <!-- Fonts Awesome CDN -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-            integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="style.css">
-    </head>
+  <body>
+    <main class="container mx-auto">
+      <!-- Hero section -->
+      <section
+        class="flex flex-col md:flex-row items-center justify-between gap-4 p-4"
+      >
+        <!-- Left content -->
+        <div class="text-center md:text-left max-w-lg">
+          <h1 class="text-3xl md:text-5xl font-bold mb-4 md:leading-snug">
+            It's good <br class="hidden md:block" />
+            tea time at The <br class="hidden md:block" />
+            Tea House
+          </h1>
+          <p class="mb-4 text-gray-600 text-base">
+            Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+            Your Taste Buds.
+          </p>
+          <button
+            class="px-6 py-4 rounded-lg font-semibold text-lg text-white bg-gradient-to-r from-[#FF8938] to-[#F00] hover:from-[#F00] hover:to-[#FF8938] transition-all duration-500"
+          >
+            Explore More <i class="fa-solid fa-arrow-right ml-2"></i>
+          </button>
+        </div>
+        <!-- Right banner -->
+        <div
+          class="w-full md:w-1/2 relative flex justify-center md:justify-end"
+        >
+          <img
+            class="w-3/4 md:w-full relative rotate-0 mt-6 md:mt-8"
+            src="./images/banner.png"
+            alt="banner"
+          />
 
-    <body>
-        <main class="container mx-auto">
-            <!-- Hero section -->
-            <div class="flex flex-col md:flex-row items-center justify-between gap-4 p-4">
-                <!-- Left content -->
-                <div class="text-center md:text-left max-w-lg">
-                    <h1 class="text-3xl md:text-5xl font-bold mb-4  md:leading-snug">
-                        It's good <br class="hidden md:block">
-                        tea time at The <br class="hidden md:block"> Tea House
-                    </h1>
-                    <p class="mb-4 text-gray-600 text-base  ">Tea and Botanical Solutions Supplier Give Optimum
-                        Satisfaction To
-                        Your Taste Buds.</p>
-                    <button class="px-6 py-4 rounded-lg font-semibold text-lg text-white bg-gradient-to-r from-[#FF8938] to-[#F00] 
-         hover:from-[#F00] hover:to-[#FF8938] transition-all duration-500">
-                        Explore More <i class="fa-solid fa-arrow-right ml-2"></i>
-                    </button>
+          <!-- Rating box -->
+          <div
+            class="flex items-center gap-3 md:gap-6 mt-4 md:mt-0 p-3 md:p-4 bg-white shadow rounded-md w-[180px] md:w-[220px] h-[55px] md:h-[60px] absolute bottom-[-10px] md:bottom-[15px] left-1/2 md:left-[90px] -translate-x-1/2 md:translate-x-4 -translate-y-1/2"
+          >
+            <i class="fa-solid fa-star text-yellow-500 text-lg md:text-2xl"></i>
+            <span>
+              <p class="font-semibold text-sm md:text-base">
+                4.5 <small class="text-gray-500">(200+)</small>
+              </p>
+              <p class="text-xs md:text-sm text-gray-600">Trust pilot rating</p>
+            </span>
+          </div>
+        </div>
+      </section>
 
-                </div>
-                <!-- Right banner -->
-                <div class="w-full md:w-1/2 relative flex justify-center md:justify-end">
-                    <img class="w-3/4 md:w-full relative rotate-0 mt-6 md:mt-8" src="./images/banner.png" alt="banner">
-
-                    <!-- Rating box -->
-                    <div class="flex items-center gap-3 md:gap-6 mt-4 md:mt-0 p-3 md:p-4 bg-white shadow rounded-md
-           w-[180px] md:w-[220px] h-[55px] md:h-[60px] absolute 
-           bottom-[-10px] md:bottom-[15px] left-1/2 md:left-[90px] 
-           -translate-x-1/2 md:translate-x-4 -translate-y-1/2">
-                        <i class="fa-solid fa-star text-yellow-500 text-lg md:text-2xl"></i>
-                        <span>
-                            <p class="font-semibold text-sm md:text-base">
-                                4.5 <small class="text-gray-500">(200+)</small>
-                            </p>
-                            <p class="text-xs md:text-sm text-gray-600">Trust pilot rating</p>
-                        </span>
-                    </div>
-                </div>
-
-
+      <!-- Our Featured Products -->
+      <section class="mt-8">
+        <h2
+          class="text-3xl font-semibold mb-4 text-center font-normal md:text-5xl text-3xl"
+        >
+          Our Featured Products
+        </h2>
+        <p class="text-gray-600 text-center md:text-base text-xs">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form,<br
+            class="hidden md:block"
+          />
+          by injected humour, or randomised words which don't look even slightly
+          believable.
+        </p>
+        <!-- Tea Products Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+          <!-- Card 1 -->
+          <div
+            class="bg-gradient-to-r from-[#F4F4F4] to-[#FFFFFF] shadow-lg rounded-xl p-6 hover:shadow-2xl transition duration-300"
+          >
+            <figure>
+              <img
+                src="images/tea-1.png"
+                alt="Milk Tea"
+                class="mx-auto object-contain"
+              />
+            </figure>
+            <div class="text-center mt-6">
+              <h2 class="text-2xl font-semibold">Milk Tea</h2>
+              <p class="mt-2 text-gray-600">
+                Creamer could be replaced by fresh milk
+              </p>
             </div>
-            <!-- Our Featured Products -->
-            <div class=" mt-8">
-                <h2 class="text-3xl font-semibold mb-4 text-center font-normal md:text-5xl text-3xl">Our Featured
-                    Products</h2>
-                <p class="text-gray-600 text-center md:text-base text-xs">There are many variations of passages of Lorem
-                    Ipsum available, but the majority have suffered alteration in some form,<br class="hidden md:block">
-                    by injected humour, or randomised words which don't look even slightly believable. </p>
-                <!-- Tea Products Section -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+          </div>
 
-                    <!-- Card 1 -->
-                    <div
-                        class="bg-gradient-to-r from-[#F4F4F4] to-[#FFFFFF] shadow-lg rounded-xl p-6 hover:shadow-2xl transition duration-300">
-                        <figure>
-                            <img src="images/tea-1.png" alt="Milk Tea" class="mx-auto  object-contain" />
-                        </figure>
-                        <div class="text-center mt-6">
-                            <h2 class="text-2xl font-semibold">Milk Tea</h2>
-                            <p class="mt-2 text-gray-600">Creamer could be replaced by fresh milk</p>
-                        </div>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div
-                        class="bg-gradient-to-r from-[#F4F4F4] to-[#FFFFFF] shadow-lg rounded-xl p-6 hover:shadow-2xl transition duration-300">
-                        <figure>
-                            <img src="images/tea-2.png" alt="Black Tea" class="mx-auto object-contain" />
-                        </figure>
-                        <div class="text-center mt-6">
-                            <h2 class="text-2xl font-semibold">Black Tea</h2>
-                            <p class="mt-2 text-gray-600">Rich in antioxidants and great for energy</p>
-                        </div>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div
-                        class="bg-gradient-to-r from-[#F4F4F4] to-[#FFFFFF] shadow-lg rounded-xl p-6 hover:shadow-2xl transition duration-300">
-                        <figure>
-                            <img src="images/tea-3.png" alt="Lemon Tea" class="mx-auto object-contain" />
-                        </figure>
-                        <div class="text-center mt-6">
-                            <h2 class="text-2xl font-semibold">Lemon Tea</h2>
-                            <p class="mt-2 text-gray-600">Fresh and zesty flavor to refresh your mind</p>
-                        </div>
-                    </div>
-
-                    <!-- Card 4 -->
-                    <div
-                        class="bg-gradient-to-r from-[#F4F4F4] to-[#FFFFFF] shadow-lg rounded-xl p-6 hover:shadow-2xl transition duration-300">
-                        <figure>
-                            <img src="images/tea-4.png" alt="Green Tea" class="mx-auto  object-contain" />
-                        </figure>
-                        <div class="text-center mt-6">
-                            <h2 class="text-2xl font-semibold">Green Tea</h2>
-                            <p class="mt-2 text-gray-600">Boosts metabolism and improves focus</p>
-                        </div>
-                    </div>
-
-                </div>
+          <!-- Card 2 -->
+          <div
+            class="bg-gradient-to-r from-[#F4F4F4] to-[#FFFFFF] shadow-lg rounded-xl p-6 hover:shadow-2xl transition duration-300"
+          >
+            <figure>
+              <img
+                src="images/tea-2.png"
+                alt="Black Tea"
+                class="mx-auto object-contain"
+              />
+            </figure>
+            <div class="text-center mt-6">
+              <h2 class="text-2xl font-semibold">Black Tea</h2>
+              <p class="mt-2 text-gray-600">
+                Rich in antioxidants and great for energy
+              </p>
             </div>
-        <!-- Section: Great Tea, Freshly Presented -->
-        <section class="mt-12 md:mt-24 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 px-4">
-            <!-- Left content: Image Grid -->
-            <div class="grid grid-cols-2 grid-rows-3 gap-4 w-full md:w-1/2 max-w-xl">
-                <!-- Box 1 -->
-                <div class="rounded-xl bg-red-200 row-span-1 flex items-center justify-center p-4 tea-card shadow-md">
-                    <div class="text-center">
-                        <i class="fas fa-leaf text-4xl text-tea-600 mb-2"></i>
-                        <p class="text-sm font-semibold text-tea-700">Fresh Ingredients</p>
-                    </div>
-                </div>
+          </div>
 
-                <!-- Box 2 -->
-                <div class="rounded-xl bg-tea-200 row-span-2 flex items-center justify-center overflow-hidden tea-card shadow-md">
-                    <div class="w-full h-full bg-gradient-to-r from-amber-100 to-amber-200 flex items-center justify-center">
-                        <div class="text-center p-4">
-                            <img src="images//fresh-1.png" alt="  ">
-                            <!-- <i class="fas fa-mountain text-5xl text-tea-700 mb-3"></i>
+          <!-- Card 3 -->
+          <div
+            class="bg-gradient-to-r from-[#F4F4F4] to-[#FFFFFF] shadow-lg rounded-xl p-6 hover:shadow-2xl transition duration-300"
+          >
+            <figure>
+              <img
+                src="images/tea-3.png"
+                alt="Lemon Tea"
+                class="mx-auto object-contain"
+              />
+            </figure>
+            <div class="text-center mt-6">
+              <h2 class="text-2xl font-semibold">Lemon Tea</h2>
+              <p class="mt-2 text-gray-600">
+                Fresh and zesty flavor to refresh your mind
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="bg-gradient-to-r from-[#F4F4F4] to-[#FFFFFF] shadow-lg rounded-xl p-6 hover:shadow-2xl transition duration-300"
+          >
+            <figure>
+              <img
+                src="images/tea-4.png"
+                alt="Green Tea"
+                class="mx-auto object-contain"
+              />
+            </figure>
+            <div class="text-center mt-6">
+              <h2 class="text-2xl font-semibold">Green Tea</h2>
+              <p class="mt-2 text-gray-600">
+                Boosts metabolism and improves focus
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Great Tea, Freshly Presented -->
+      <section
+        class="mt-12 md:mt-24 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 px-4"
+      >
+        <!-- Left content: Image Grid -->
+        <div
+          class="grid grid-cols-2 grid-rows-3 gap-4 w-full md:w-1/2 max-w-xl"
+        >
+          <!-- Box 1 -->
+          <div
+            class="rounded-xl bg-red-200 row-span-1 flex items-center justify-center p-4 tea-card shadow-md"
+          >
+            <div class="text-center">
+              <i class="fas fa-leaf text-4xl text-tea-600 mb-2"></i>
+              <p class="text-sm font-semibold text-tea-700">
+                Fresh Ingredients
+              </p>
+            </div>
+          </div>
+
+          <!-- Box 2 -->
+          <div
+            class="rounded-xl bg-tea-200 row-span-2 flex items-center justify-center overflow-hidden tea-card shadow-md"
+          >
+            <div
+              class="w-full h-full bg-gradient-to-r from-amber-100 to-amber-200 flex items-center justify-center"
+            >
+              <div class="text-center p-4">
+                <img src="images//fresh-1.png" alt="  " />
+                <!-- <i class="fas fa-mountain text-5xl text-tea-700 mb-3"></i>
                             <p class="font-semibold text-tea-800">Mountain Grown</p>
                             <p class="text-xs text-tea-600 mt-1">High altitude tea leaves</p> -->
-                        </div>
-                    </div>
-                </div>
+              </div>
+            </div>
+          </div>
 
-                <!-- Box 3 -->
-                <div class="rounded-xl bg-tea-200 row-span-2 flex items-center justify-center overflow-hidden tea-card shadow-md">
-                    <div class="w-full h-full bg-gradient-to-r from-amber-200 to-amber-300 flex items-center justify-center">
-                        <div class="text-center p-4">
-                            <img src="images/fresh-2.png" alt="">
-                            <!-- <i class="fas fa-heart text-5xl text-rose-600 mb-3"></i>
+          <!-- Box 3 -->
+          <div
+            class="rounded-xl bg-tea-200 row-span-2 flex items-center justify-center overflow-hidden tea-card shadow-md"
+          >
+            <div
+              class="w-full h-full bg-gradient-to-r from-amber-200 to-amber-300 flex items-center justify-center"
+            >
+              <div class="text-center p-4">
+                <img src="images/fresh-2.png" alt="" />
+                <!-- <i class="fas fa-heart text-5xl text-rose-600 mb-3"></i>
                             <p class="font-semibold text-tea-800">Handpicked</p>
                             <p class="text-xs text-tea-600 mt-1">With care and precision</p> -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Box 4 -->
-                <div class="rounded-xl bg-gradient-to-r from-[#F4F4F4] to-[#FFFFFF] row-span-1 flex items-center justify-center p-4 tea-card shadow-md">
-                    <div class="text-center">
-                        <i class="fas fa-award text-4xl text-tea-600 mb-2"></i>
-                        <p class="text-sm font-semibold text-tea-700">Premium Quality</p>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
 
-            <!-- Right content: Text -->
-            <div class="text-center md:text-left max-w-lg w-full">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-snug tea-title ">Great Tea, Freshly Presented</h2>
-                <p class="mb-4 text-gray-600 text-base lg:text-lg">
-                    The meaning of Gong Cha in Chinese is to provide the best tea to the emperor from all possessions.
-                    It represents the highest quality and self-expectation. Established in 2006, Gong Cha has been deeply
-                    appreciated by its customers due to word-of-mouth and its unique customized service originating from Taiwan.
-                </p>
-
-                <div class="bg-tea-50 p-4 rounded-lg mt-6 mb-4 border-l-4 border-tea-500">
-                    <h4 class="mb-2 font-semibold text-tea-700 text-xl"><i class="fas fa-star text-amber-500 mr-2"></i>Unique Taste</h4>
-                    <p class="text-gray-600 text-base">
-                        A unique and different style from other teapots gives a luxurious and minimalist appearance.
-                    </p>
-                </div>
-
-                <div class="bg-tea-50 p-4 rounded-lg mt-4 mb-4 border-l-4 border-tea-500">
-                    <h4 class="mb-2 font-semibold text-tea-700 text-xl"><i class="fas fa-gem text-amber-500 mr-2"></i>Premium Quality</h4>
-                    <p class="text-gray-600 text-base">
-                        Premium quality that makes tea more elegant and more durable when you use it.
-                    </p>
-                </div>
-                
-                <button class="mt-6 bg-tea-500 hover:bg-tea-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
-                    Explore Our Collection <i class="fas fa-arrow-right ml-2"></i>
-                </button>
+          <!-- Box 4 -->
+          <div
+            class="rounded-xl bg-gradient-to-r from-[#F4F4F4] to-[#FFFFFF] row-span-1 flex items-center justify-center p-4 tea-card shadow-md"
+          >
+            <div class="text-center">
+              <i class="fas fa-award text-4xl text-tea-600 mb-2"></i>
+              <p class="text-sm font-semibold text-tea-700">Premium Quality</p>
             </div>
-        </section>
+          </div>
+        </div>
 
-        </main>
-        <script src="script.js"></script>
-    </body>
+        <!-- Right content: Text -->
+        <div class="text-center md:text-left max-w-lg w-full">
+          <h2
+            class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-snug tea-title"
+          >
+            Great Tea, Freshly Presented
+          </h2>
+          <p class="mb-4 text-gray-600 text-base lg:text-lg">
+            The meaning of Gong Cha in Chinese is to provide the best tea to the
+            emperor from all possessions. It represents the highest quality and
+            self-expectation. Established in 2006, Gong Cha has been deeply
+            appreciated by its customers due to word-of-mouth and its unique
+            customized service originating from Taiwan.
+          </p>
 
+          <div
+            class="bg-tea-50 p-4 rounded-lg mt-6 mb-4 border-l-4 border-tea-500"
+          >
+            <h4 class="mb-2 font-semibold text-tea-700 text-xl">
+              <i class="fas fa-star text-amber-500 mr-2"></i>Unique Taste
+            </h4>
+            <p class="text-gray-600 text-base">
+              A unique and different style from other teapots gives a luxurious
+              and minimalist appearance.
+            </p>
+          </div>
+
+          <div
+            class="bg-tea-50 p-4 rounded-lg mt-4 mb-4 border-l-4 border-tea-500"
+          >
+            <h4 class="mb-2 font-semibold text-tea-700 text-xl">
+              <i class="fas fa-gem text-amber-500 mr-2"></i>Premium Quality
+            </h4>
+            <p class="text-gray-600 text-base">
+              Premium quality that makes tea more elegant and more durable when
+              you use it.
+            </p>
+          </div>
+
+          <button
+            class="mt-6 bg-tea-500 hover:bg-tea-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105"
+          >
+            Explore Our Collection <i class="fas fa-arrow-right ml-2"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- Meet Our Team Section -->
+      <section
+        class="mt-8 flex flex-col md:flex-row items-center justify-between gap-8 mb-16 h-full bg-gradient-to-r from-[#ff8938] to-[#ff0000] "
+      >
+        <div
+          class="text-center md:text-left max-w-lg w-full border-2 border-red-500"
+        >
+          <h2 class="text-3xl font-semibold mb-4 text-center">Meet Our Super Clients</h2>
+          <p class="text-gray-600 text-center md:text-base text-xs">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable.
+          </p>
+          <button class="mt-6  font-semibold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">Explore Our Team</button>
+        </div>
+        <div
+          class="text-center md:text-left max-w-lg w-full border-2 border-red-500"
+        ></div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
