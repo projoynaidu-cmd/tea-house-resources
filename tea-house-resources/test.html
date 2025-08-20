@@ -1,15 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Tailwind Button Test</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Our Super Clients</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+        }
+        
+        .client-card {
+            transition: all 0.3s ease;
+        }
+        
+        .client-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
 </head>
-<body class="flex items-center justify-center h-screen bg-gray-100">
-
-  <button class="px-4 py-2 rounded-full font-semibold bg-gradient-to-r from-[#FF8938] to-[#F00] text-white">
-    Explore More
-  </button>
-
+<body class="bg-gray-50 min-h-screen flex items-center justify-center p-4">
+    <div class="container max-w-6xl mx-auto py-12">
+        <!-- Section: Meet Our Super Clients -->
+        <section class="flex flex-col lg:flex-row gap-12">
+            <!-- Left Content -->
+            <div class="w-full lg:w-2/5">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Meet Our Super Clients</h1>
+                <p class="text-gray-600 text-lg mb-8">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                </p>
+                <button class="flex items-center text-white bg-[#4F46BA] hover:bg-[#4338CA] px-6 py-3 rounded-lg transition duration-300">
+                    Show All
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Right Content - Cards -->
+            <div class="w-full lg:w-3/5 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Card 1 -->
+                <div class="client-card bg-white rounded-xl p-6 shadow-md">
+                    <p class="text-gray-600 mb-4">
+                        We are providing the best and suitable home insurance services for the people who are interested to treatment.
+                    </p>
+                    <p class="text-gray-600">
+                        We are providing the best and suitable home insurance services for the people who are interested to treatment.
+                    </p>
+                    <div class="flex items-center mt-6">
+                        <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center mr-4">
+                            <span class="text-purple-600 font-bold">IY</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800">Ilham Yuda</h3>
+                            <p class="text-gray-600 text-sm">Businessman</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="client-card bg-white rounded-xl p-6 shadow-md">
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Introduction to Treatment</h2>
+                    <div class="h-px bg-gray-200 my-4"></div>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <span class="text-blue-600 font-bold">IY</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800">Ilham Yuda</h3>
+                            <p class="text-gray-600 text-sm">Designer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="client-card bg-white rounded-xl p-6 shadow-md md:col-span-2 lg:col-span-1">
+                    <div class="flex items-center text-gray-500 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        <span>11/10 - 25/9</span>
+                    </div>
+                    <div class="h-px bg-gray-200 my-4"></div>
+                    <p class="text-gray-600">
+                        We are providing the best and suitable home insurance services for the people who are interested to treatment.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>

@@ -1,8 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Manrope', sans-serif;
+}
+
+
+.tea-title {
+    font-family: 'Manrope', serif;
+    color: #553c1b;
+}
+
+.tea-card {
+    transition: transform 0.3s ease;
+}
+
+.tea-card:hover {
+    transform: translateY(-5px);
 }
